@@ -2,20 +2,20 @@
 apiVersion: batch/v1
 kind: Job
 metadata: 
-  name: r-sample-
+  name: r-sample-3
 spec: 
   activeDeadlineSeconds: 18000
   completions: 1
   parallelism: 1
   template: 
     metadata: 
-      name: r-sample-
+      name: r-sample-3
     spec: 
       containers: 
         - 
           args: 
             - master
-            - 266682c05b516ac88eb41576be8052b4d1074402
+            - 416538d158d9825ac9887950a5f1c62f7b44819b
             - "R/rscript.R"
             - r-jobs-input
             - r-jobs-output

@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+spec:
+  nodeSelector:
+    cloud.google.com/gke-preemptible: true
+metadata:
+  name: completedjobdeletion
+  labels:
+    name: completedJobdeletion
+spec:
+  restartPolicy: Never
+  containers:
+  - name: job-deletion-on-completion
+    image: gcr.io/gcp-experiments-185507/cleanup

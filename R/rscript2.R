@@ -1,2 +1,2 @@
 print('I am running')
-Sys.sleep(1000)
+Sys.sleep(100)

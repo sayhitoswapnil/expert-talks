@@ -15,7 +15,7 @@ spec:
         - 
           args: 
             - master
-            - 266682c05b516ac88eb41576be8052b4d1074402
+            - 416538d158d9825ac9887950a5f1c62f7b44819b
             - "R/rscript.R"
             - r-jobs-input
             - r-jobs-output
@@ -26,9 +26,9 @@ spec:
           name: r-sampe-1
           resources: 
             limits: 
-              cpu: 1
+              cpu: 3
               memory: 2000Mi
             requests: 
-              cpu: 1
+              cpu: 3
               memory: 100Mi
       restartPolicy: Never
