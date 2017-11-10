@@ -2,28 +2,28 @@
 apiVersion: batch/v1
 kind: Job
 metadata: 
-  name: r-sample-1
+  name: r-sample-2
 spec: 
   activeDeadlineSeconds: 18000
   completions: 1
   parallelism: 1
   template: 
     metadata: 
-      name: r-sample-1
+      name: r-sample-2
     spec: 
       containers: 
         - 
           args: 
             - master
             - 266682c05b516ac88eb41576be8052b4d1074402
-            - "R/rscript.R"
+            - "R/rscript1.R"
             - r-jobs-input
             - r-jobs-output
           command: 
             - ./git_update_run.sh
           image: "gcr.io/gcp-experiments-185507/r"
           imagePullPolicy: IfNotPresent
-          name: r-sampe-1
+          name: r-sampe-2
           resources: 
             limits: 
               cpu: 1
